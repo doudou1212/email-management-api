@@ -19,9 +19,9 @@ management:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:9000/eureka/
+      defaultZone: http://${EUREKA_SERVER_HOST}:${EUREKA_SERVER_PORT}/eureka/
 server:
-  port: 9002
+  port: ${PORT}
 spring:
   application:
     name: service-email-management
